@@ -1,5 +1,55 @@
 extends layout
 
 block content
-  h1= Lovelist
-  p Ini buat #{title}
+  body(style="background-color: #ffffff;")
+    div#body
+      nav.navbar.navbar-default.navbar-fixed-top
+        div.container-fluid
+          div.navbar-header
+            button.navbar-toggle.collapsed.navbar-left(type="button",data-toggle="collapse", data-target="#bs-example-navbar-collapse-2")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="#")
+              img#prelo-brand(src="./images/logo.png",alt="Logo Prelo")
+            ul.navbar-right.nav.navbar-nav
+              il
+                a(href="#")
+                  i.glyphicon.glyphicon-search(aria-hidden="true")
+              il
+                a(href="#")
+                  i.glyphicon.glyphicon-shopping-cart(aria-hidden="true")
+          div.collapse.navbar-collapse#bs-example-navbar-collapse-2
+            ul.nav.navbar-nav
+              li
+                a(href="#") Profil
+              li
+                a(href="#") Profil
+              li
+                a(href="#") Profil
+          div.navbar-header.subheader
+            div.container-fluid
+              h4 LOVELIST
+      div.container-fluid#products-container
+        each product in _data
+          div.row.product-container
+            div.col-sm-4.col-xs-4
+              div.square
+                img(src=product.display_picts[0]).img-responsive
+            div.col-sm-8.col-xs-8.no-padding
+              h5
+                b #{product.name}
+              div.price Rp #{product.price}
+              div.row.love-comment-container
+                div.col-sm-3.col-xs-3(style="width:22%;padding-right:3px")
+                  a(href="#")
+                    i.glyphicon.glyphicon-comment(aria-hidden="true")
+                    span(style="color:#ddd") #{product.num_comment}
+                div.col-sm-3.col-xs-3(style="padding-left:0")
+                  a(href="#")
+                    i.glyphicon.glyphicon-heart(aria-hidden="true")
+                    span(style="color:#ddd") #{product.num_lovelist}
+    div#footer
+      div.load-container
+        a.btn.btn-primary.btn-sm(href="#") Load More

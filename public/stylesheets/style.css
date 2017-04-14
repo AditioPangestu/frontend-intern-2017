@@ -1,7 +1,12 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #00bab0;
+  font-size: 14px ;
+  padding: 0;
+}
+#body {
+  padding: 0 15px;
+}
+h1, h2,h3,h4,h5,h6, body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 a {
   color: #00a78f;
@@ -11,16 +16,14 @@ a {
   text-align: center;
 }
 #prelo-logo {
-  margin: 30% 0;
+  margin: 70px 0;
   width: 50%;
 }
 
 /*Form input*/
 input.form-control, button.form-control,
 #fb, #tw{
-  font-size: 200%;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
   height: auto;
   color: #ffffff;
 }
@@ -41,11 +44,10 @@ input.form-control{
 }
 #lupa-password{
   color: #ffffff;
-  font-size: 200%;
 }
 /*sosmed login*/
 #sosmed-login {
-  margin-top: 10%;
+  margin-top: 30px;
 }
 #fb, #tw {
   width: 100%;
@@ -54,20 +56,120 @@ input.form-control{
   border-bottom: 3px solid #00a399;
 }
 #sosmed-desc {
-  margin-top: 20px;
+  margin-top: 10px;
   padding-bottom: 10px;
   color: #ffffff;
-  font-size: 200%;
   border-bottom: 1px solid #ffffff;
 }
 
 #sign-up {
-  margin-top: 60px;
+  margin-top: 15px;
 }
 #sign-up-desc{
   color: #ffffff;
-  font-size: 200%;
 }
 #sign-up-desc a {
   color: #ffffff;
+}
+
+/*love list*/
+
+nav.navbar {
+  background-color: #00bab0;
+  border: none;
+}
+a.navbar-brand{
+  display: block;
+  padding: 10px;
+  width: 60%;
+}
+#prelo-brand {
+  height: 30px;
+  margin: 0 auto;
+}
+.navbar-toggle.navbar-left {
+  float: left;
+  margin-left: 10px;
+}
+.navbar-nav.navbar-right{
+  float: right;
+  margin-right: 10px;
+}
+.navbar-nav.navbar-right a i {
+  font-size: 20px;
+  padding-left: 10px;
+  margin-top: 7px;
+  color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #ffffff;
+  background: #00afa5;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border-top:1px solid #00afa5;
+}
+.subheader {
+  background-color: #e7e7e7;
+  border-bottom: 2px solid #dddddd;
+}
+h4 {
+  padding: 5px;
+  border-bottom: 1px solid #dddddd;
+}
+.product-container {
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+}
+#products-container{
+  margin-top: 110px;
+}
+.no-padding{
+  padding: 0;
+}
+i.glyphicon {
+  color: #dddddd;
+  display: inline-block;
+  margin-right: 5px ;
+}
+.love-comment-container{
+  margin-top: 10px;
+}
+.square {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+img.img-responsive{
+  position: absolute;
+}
+
+.price {
+  color: #00bab0;
+  margin-top: -5px;
+}
+
+.load-container {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #dddddd;
+}
+
+.load-container a {
+  padding: 5px 20px;
+  border-radius: 31px;
+  color: #00bab0;
+  background-color: white;
+  border: 1px solid white;
+}
+.load-container a:active , .load-container a:hover {
+  color: #00bab0;
+  background-color: white;
+  border: 1px solid white;
+}
+.form-control.btn.btn-primary:active,.form-control.btn.btn-primary:hover {
+  background-color: #00bab0;
+  border: 1px solid #ffffff;
 }

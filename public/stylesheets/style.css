@@ -21,8 +21,11 @@ a {
 }
 
 /*Form input*/
-input.form-control, button.form-control,
-#fb, #tw{
+div.form-container {
+  text-align: left;
+  margin-bottom: 10px;
+}
+button.form-control {
   margin-bottom: 10px;
   height: auto;
   color: #ffffff;
@@ -172,4 +175,9 @@ img.img-responsive{
 .form-control.btn.btn-primary:active,.form-control.btn.btn-primary:hover {
   background-color: #00bab0;
   border: 1px solid #ffffff;
+}
+small{
+  display: none;
+  color: white;
+  margin-top: 5px;
 }

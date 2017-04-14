@@ -13,34 +13,34 @@ router.post('/', function (req, res) {
     var userNameInput = req.body.userNameInput;
     var passwordInput = req.body.passwordInput;
 
-
     var data = querystring.stringify({
-      'username_or_email': userNameInput,
-      'password': passwordInput
+        'username_or_email': userNameInput,
+        'password': passwordInput
     });
 
     var options = {
-      host: 'dev.prelo.id',
-      path: '/api/auth/login',
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Content-Length': Buffer.byteLength(data)
-      }
+        host: 'dev.prelo.id',
+        path: '/api/auth/login',
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Length': Buffer.byteLength(data)
+        }
     };
-    var dataPrelo="";
+    var dataPrelo = "";
     var httpreq = http.request(options, function (response) {
-      response.setEncoding('utf8');
-      response.on('data', function (chunk) {
-        dataPrelo+=chunk;
-      });
-      response.on('end', function() {
-        var objectPrelo = JSON.parse(dataPrelo);
-        res.redirect('/lovelist?token='+objectPrelo._data.token);
-      })
+        response.setEncoding('utf8');
+        response.on('data', function (chunk) {
+            dataPrelo += chunk;
+        });
+        response.on('end', function () {
+            var objectPrelo = JSON.parse(dataPrelo);
+            res.redirect('/lovelist?token=' + objectPrelo._data.token);
+        })
     });
     httpreq.write(data);
     httpreq.end();
+
 });
 
 /* GET lovelsit page. */

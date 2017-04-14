@@ -1,7 +1,73 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #00bab0;
 }
 a {
-  color: #00b7ff;
+  color: #00a78f;
+}
+/*Logo */
+.center-container {
+  text-align: center;
+}
+#prelo-logo {
+  margin: 30% 0;
+  width: 50%;
+}
+
+/*Form input*/
+input.form-control, button.form-control,
+#fb, #tw{
+  font-size: 200%;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: auto;
+  color: #ffffff;
+}
+input.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #ffffff;
+}
+button.form-control{
+  background-color: #00bab0;
+  border: 1px solid #ffffff;
+}
+input.form-control{
+  background-color: #00b1a7;
+  border: 1px solid #00b1a7;
+}
+/*forget password*/
+.right-container{
+  text-align: right;
+}
+#lupa-password{
+  color: #ffffff;
+  font-size: 200%;
+}
+/*sosmed login*/
+#sosmed-login {
+  margin-top: 10%;
+}
+#fb, #tw {
+  width: 100%;
+  background-color: #00b1a7;
+  border: 1px solid #00b1a7;
+  border-bottom: 3px solid #00a399;
+}
+#sosmed-desc {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: 200%;
+  border-bottom: 1px solid #ffffff;
+}
+
+#sign-up {
+  margin-top: 60px;
+}
+#sign-up-desc{
+  color: #ffffff;
+  font-size: 200%;
+}
+#sign-up-desc a {
+  color: #ffffff;
 }

@@ -1,5 +1,36 @@
 extends layout
 
 block content
-  h1= Login
-  p Ini buat Login
+  div.center-container
+    img#prelo-logo(src="./images/logo.png",alt="Logo Prelo")
+    form.form-horizontal
+      div.row
+        div.col-lg-12
+          input.form-control#input-username(type="text",placeholder="Email atau Username")
+        div.col-lg-12
+          input.form-control#input-password(type="password",placeholder="Password")
+        div.col-lg-12
+          button.form-control.btn.btn-primary(type="submit")
+            | Log In
+          div.right-container
+            a(href="#")#lupa-password Lupa password?
+    div#sosmed-login
+      div.row
+        div.col-lg-12
+          a.btn.btn-primary#fb(href="#")
+            i
+            | Log in dengan facebook
+        div.col-lg-12
+          a.btn.btn-primary#tw(href="#")
+            i
+            | Log in dengan twitter
+        div.col-lg-12
+          p#sosmed-desc
+            | Prelo tidak akan post apapun tanpa persetujuan kamu
+    div#sign-up
+      div.row
+        div.col-lg-12
+          p#sign-up-desc
+            | Belum Punya ID Prelo?
+            a(href="#")
+              b  Daftar sekarang

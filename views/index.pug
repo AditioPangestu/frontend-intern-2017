@@ -3,12 +3,12 @@ extends layout
 block content
   div.center-container
     img#prelo-logo(src="./images/logo.png",alt="Logo Prelo")
-    form.form-horizontal
+    form.form-horizontal(action="/", method="POST")
       div.row
         div.col-lg-12
-          input.form-control#input-username(type="text",placeholder="Email atau Username")
+          input.form-control#input-username(type="text",placeholder="Email atau Username",name="userNameInput")
         div.col-lg-12
-          input.form-control#input-password(type="password",placeholder="Password")
+          input.form-control#input-password(type="password",placeholder="Password",name="passwordInput")
         div.col-lg-12
           button.form-control.btn.btn-primary(type="submit")
             | Log In

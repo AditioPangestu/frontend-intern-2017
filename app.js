@@ -19,7 +19,7 @@ app.set('view engine', 'pug');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 //app.use(stylus.middleware(path.join(__dirname, 'public'))); //uncomment line ini untuk menggunakan stylus
 app.use(express.static(path.join(__dirname, 'public')));
@@ -47,6 +47,6 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-app.listen(3000);
-
 app.use(express.static('public'));
+
+app.listen(3000);
